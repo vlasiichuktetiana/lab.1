@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <a href="#">
+          <img src="media/logo.png" alt="Логотип"></a>
+          <h1>My website</h1>
+        <div class="author-info" id="authorInfo">
+          <img src="media/myfoto.jpg" alt="Фото автора">
+          <b>Власійчук Тетяна</b>
+          <p>Студентка 2 курсу факультету математики та інформатики</p>
+          <p>Cпеціальність "Середня освіта (Інформатика)", 208 група</p>
+          <p>Голова комісії соціальної комунікації факультету</p>
+          <p>Активна учасниця студентського життя <3</p>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><b>Завдання:</b> 
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="task1.html">1.Конвертер</a>
+            <a href="task2.html">2.Конвертер</a>
+            <a href="task3.html">3.</a>
+          </div>
+        </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Вітаємо на цьому сайті</h2>
+    <p>Тут реалізовано такі завдання:</p>
+    <p>1. Конвертер одиниць вимірювання</p>
+    <p>2. Конвертер величин</p>
+    <p>3. </p>
+    <p>Ps: Якщо навести курсор мишки на лого сайту, можна дізнатися інформацію про автора <3</p>
+  </section>
+  
+    <script>
+        document.querySelector('.navbar a img').addEventListener('mouseenter', function() {
+          document.getElementById('authorInfo').style.display = 'block';
+        });
+        
+        document.querySelector('.navbar a img').addEventListener('mouseleave', function() {
+          document.getElementById('authorInfo').style.display = 'none';
+        });
+        </script>
+</body>
+</html>

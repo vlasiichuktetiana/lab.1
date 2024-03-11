@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+          <img src="media/logo.png" alt="Логотип"></a>
+        <div class="dropdown">
+          <button class="dropbtn"><b>Завдання:</b> 
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="task1.html">1.Конвертер</a>
+            <a href="index.html">Головна</a>
+            <a href="task3.html">3.</a>
+          </div>
+        </div>
+        
+        <h1>Конвертер величин</h1>
+        
+        <p>Виберіть значення:</p>
+        <input type="number" id="valueToConvert" value="1024">
+        
+        <p>Перевести з:</p>
+        <select id="fromUnit">
+            <option value="byte">Байти</option>
+            <option value="kilobyte">Кілобайти</option>
+            <option value="megabyte">Мегабайти</option>
+            <option value="gigabyte">Гігабайти</option>
+            <option value="terabyte">Терабайти</option>
+        </select>
+        
+        <p>В:</p>
+        <select id="toUnit">
+            <option value="byte">Байти</option>
+            <option value="kilobyte">Кілобайти</option>
+            <option value="megabyte">Мегабайти</option>
+            <option value="gigabyte">Гігабайти</option>
+            <option value="terabyte">Терабайти</option>
+        </select>
+        <br><br>
+        
+        <button onclick="convert()">Перевести</button>
+        
+        <div id="result"></div>
+        
+        <script src="script2.js"></script>
+    </div>
+</body>
